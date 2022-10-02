@@ -1,119 +1,60 @@
-* {
-  font-family: "Lexend", sans-serif;
-}
-
-.container {
-  width: 900px;
-  margin: auto;
-  background-color: rgba(228, 32, 22, 0.925);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.grid {
+/* PROVA MIA */
+/* .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.timer {
-  padding: 10px 0;
+.card {
+  height: 100px;
+  width: 100px;
+  margin: 0.5rem;
+  background-color: #fff;
+  border: 2px solid black;
 }
 
-.disabled {
-  pointer-events: none;
-  cursor: wait;
+.rosa {
+  background-color: pink;
 }
 
-.show {
-  animation-name: rotazione-carta;
-  animation-duration: 0.5s;
+.blu {
+  background-color: blue;
+}
+
+.viola {
+  background-color: purple;
+}
+
+.giallo {
+  background-color: yellow;
+}
+
+.verde {
+  background-color: green;
+}
+
+.rosso {
+  background-color: red;
+}
+
+.arancione {
+  background-color: orange;
+}
+
+.azzurro {
+  background-color: aquamarine;
+}
+
+.hiddens {
   background-color: white;
-  border: 1px solid #3889c4;
-  border-radius: 10px;
-}
+} */
 
-.find {
-  animation-name: indovinato;
-  animation-duration: 0.5s;
-  background-color: rgba(247, 212, 16, 0.56);
-  border: 1px solid #3889c4;
-  border-radius: 10px;
-}
-
-.button {
-  color: white;
-  font-size: 22px;
-  text-align: center;
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #b80adbdc;
-  border: 1px solid #3889c4;
-  border-radius: 5px;
-}
-
-.button:hover {
-  background-color: #16486c;
-  border: none;
-}
-
-#modal {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-#modal.active {
+/* PROVA CON TUTORIAL YOUTUBE  */
+.container {
+  width: 500px;
+  margin: auto;
+  gap: 0.5rem;
   display: flex;
-}
-
-#modal h2 {
-  margin-top: 20px;
-}
-
-@media (max-width: 600px) {
-  .container {
-    width: 400px;
-  }
-}
-
-@media (max-width: 420px) {
-  .container {
-    width: 230px;
-  }
-}
-
-@keyframes indovinato {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotazione-carta {
-  from {
-    transform: perspective(300px) rotate3d(0, 1, 0, 80deg);
-    animation-timing-function: ease-in;
-  }
-
-  50% {
-    transform: perspective(300px) rotate3d(0, 1, 0, -10deg);
-    animation-timing-function: ease-in;
-  }
-
-  to {
-    transform: perspective(300px);
-    animation-timing-function: ease-in;
-  }
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
